@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reminders</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+</head>
+<body onload="onLoad()">
+    <nav class="navbar">
+        <ul>
+            <li> 
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="">Other</a></li>
+        </ul>
+    </nav>
+
+    <div class="title">
+        <h1>
+            Simple Reminders
+        </h1>
+    </div>
+    <main>
+        <nav class="tabs">
+            <ul>
+                <li><button id="quickview" class="switchtabs">Quick View</button></li>
+                <li><button id="boardview" class="switchtabs">Board</button></li>
+            </ul>
+        </nav>
+
+        <div id="All" class="reminderstab">
+            <div class="quickactions">
+                <button id="createbutton">
+                    Create New Reminder
+                </button>
+                
+                <div class="dropdown">
+                    <button id="sortingbutton">Sort</button>
+                    <div class="dropdown-content">
+                        <button id="datesort">Date</button>
+                        <button id="completionsort">Completed</button>
+                    </div>
+                </div>
+
+                
+
+                <button id="startdelete" class="deletebutton">
+                    Delete
+                </button>
+                <button id="deleteselected" class="deletebutton" style="display: none;">
+                    Delete Selected (0)
+                </button>
+            </div> 
+
+            <div id="creating1" class="creating">
+                <label class="inputlabel" for="reminder1"><b>Task:</b></label>
+                <input class="inputbox" id="reminder1" placeholder="Enter Task">
+
+                <label class="inputlabel" for="date1"><b>Date:</b></label>
+                <input class="inputbox" type="datetime-local" id="date1">
+                <br>
+                <button id="cancel">Cancel</button>
+                <button id="create">Create</button>
+
+            </div>
+
+            <div>
+                <table id="tasklist">
+                    <thead>
+                        <tr>
+                            <th width="10%">Status</th>
+                            <th width="60%">Task</th>
+                            <th width="30%">Due Date</th>
+                        </tr>    
+                    </thead>
+
+                    <tbody>
+
+                    </tbody>
+                    
+                </table>
+            </div>
+        </div>
+
+        <div id="Board" class="reminderstab">
+            <p>
+                COMING SOON!
+            </p>
+        </div>
+
+        
+    </main>  
+    
+
+    <div id="bottom">
+        yeah
+    </div>
+</body>
+</html>
